@@ -48,34 +48,3 @@ for light in lights:
         total += model[button_int].as_long()
 
 print(total)
-
-
-#
-# total = 0
-# for light in lights:
-#     print("total = " ,len(lights), "current = ", lights.index(light))
-#     presses = 0
-#     final_light = list(map(int,light.pop()[1:-1].split(",")))
-#     light_len = len(final_light)
-#     curr_light = [0] * len(final_light)
-#     updated_lights = [(curr_light, 0)]
-#     while True:
-#         print(presses, len(updated_lights))
-#         curr_light, presses = updated_lights.pop(0)
-#         if curr_light == final_light:
-#             break
-#         for move in light:
-#             new_light = curr_light.copy()
-#             move = list(map(int,move[1:-1].split(",")))
-#             for num in move:
-#                 new_light[num] = new_light[num] + 1
-#             if (new_light, presses + 1) in updated_lights:
-#                 pass
-#             else:
-#                 updated_lights.append((new_light, presses + 1))
-#     print("presses", presses)
-#     print("list length = ", len(updated_lights))
-#     total += presses
-#
-# print(total, "total")
-
